@@ -1,6 +1,6 @@
 {
-    "name": "vinelab/neoeloquent",
-    "description": "Laravel wrapper for the Neo4j graph database REST interface",
+    "name": "pabperalta/neoeloquent",
+    "description": "Fork de NeoEloquent para Laravel 10",
     "keywords": [
         "neo4j",
         "ogm",
