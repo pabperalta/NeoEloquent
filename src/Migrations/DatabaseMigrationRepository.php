@@ -210,4 +210,16 @@ class DatabaseMigrationRepository implements MigrationRepositoryInterface
     {
         $this->label()->delete();
     }
+
+    /**
+     * Get all of the migrations for a given batch number.
+     *
+     * @param  int  $batch
+     * @return array
+     */
+    public function getMigrationsByBatch($batch)
+    {
+        return $this->table()->where('batch', $batch)->orderBy('migration', 'asc')->get()->all();
+    }
+
 }
